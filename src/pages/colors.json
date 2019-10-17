@@ -1,0 +1,11 @@
+{"dark":{
+        "Home": {
+            "backgroundColor": "#000"           
+        }
+    },
+
+"light":{
+    "bodyColor":"#FFF", 
+    "headerColor":"#AAA"
+    }
+}

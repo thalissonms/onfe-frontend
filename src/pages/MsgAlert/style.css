@@ -1,0 +1,90 @@
+#all {
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+    position:absolute;
+    z-index:2;
+    top:0;
+}
+#all #msgBox {
+    width:30%;
+    height:30%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background:#333;
+    border-radius: 10px;
+    box-shadow:1px 1px 10px #000;
+}
+#all #msgBox #msgText {
+    width:90%;
+    height:72%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    word-wrap:break-word;
+    font-size:26px;
+    color:#EEE;
+    font-weight:600;
+}
+#all #msgBox #buttonsAlert {
+    width:100%;
+    height:20%;
+    display:flex;
+    flex-direction:row;
+    align-items:flex-end;
+    justify-content:center;
+    bottom:0;
+}
+#all #msgBox #buttonsAlert .twoButtons {
+    width:50%;
+    height:70%;
+    display:flex;
+    justify-content:center;
+}
+#all #msgBox #buttonsAlert .twoButtons .buttonMsgAlert {
+    width:90%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background-color: rgb(105, 105, 105);
+    font-size:20px;
+    font-weight:bold;
+    color:#FFF;
+    box-shadow:1px 1px 5px #000;
+    border-radius:10px;
+    cursor:pointer;
+    opacity:0.9;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* ----------- EFEITOS ----------- */
+#all #msgBox #buttonsAlert .twoButtons .buttonMsgAlert:hover {
+    opacity:1;
+    box-shadow:2px 2px 6px #000;
+}
+#all #msgBox #buttonsAlert .twoButtons .buttonMsgAlert:active{
+    box-shadow:0.5px 0.5px 1px #000;
+}
+
+/* ------------- AJUSTES FONTES ------------- */ 
+@media screen and (max-width: 1400px) {
+    #all #msgBox #msgText {
+        font-size:20px;
+        font-weight:550;
+    }
+    #all #msgBox #buttonsAlert .twoButtons .buttonMsgAlert {
+        font-size:18px;
+        font-weight:500;
+    }
+}
