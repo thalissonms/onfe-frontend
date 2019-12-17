@@ -13,7 +13,7 @@ export default function Item ({id, nome, quantidade, unidade, preço, openBox, m
             }
         return(
             <>
-            <div onClick={() => delEdit()} className="itemInfo">
+            <div onClick={() => delEdit()} className="itemInfo" id={nome}>
                  <ul cellSpacing='0' cellPadding='0' >                 
                         <li style={{width:'60%', borderLeft:'none', justifyContent:'left'}}>
                             <span style={{marginLeft:15, color:fontColor}}>{nome}</span>
