@@ -13,6 +13,12 @@ export default function Box ({page, id}) {
         document.querySelector('#getBox').style.display = 'none'
         document.querySelector('body').style.overflow = 'auto'
     }
+    document.addEventListener('keydown', (event) => {
+        const keyName = event.key
+        if (keyName == 'Escape'){
+            closeBox();
+        }
+    })
     if (page === 'add'){
         Nova = Register
     } else if (page === 'edit') {

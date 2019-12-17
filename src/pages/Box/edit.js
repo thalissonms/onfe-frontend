@@ -34,7 +34,7 @@ export default function Register ({id, close}) {
             preçoClient: getItem.preçoClient
         })
         close();
-        window.location = window.location.href +"/#"+ produto
+        window.location = window.location.href +"/#"+ getItem.produto
     }
 
     return (
