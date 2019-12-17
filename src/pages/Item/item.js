@@ -11,6 +11,9 @@ export default function Item ({id, nome, quantidade, unidade, preço, openBox, m
                     openBox('edit', id)
                 }
             }
+            if (unidade <= 0){
+               document.querySelector('.itemInfo').style.backgorundColor = '#F00';
+            }
         return(
             <div onClick={() => delEdit()} className="itemInfo">
                  <ul cellSpacing='0' cellPadding='0' >                 
@@ -28,9 +31,7 @@ export default function Item ({id, nome, quantidade, unidade, preço, openBox, m
                         </li>   
                 </ul>
            </div>
-{if (unidade <= 0){
-document.querySelector('.itemInfo').style.backgorundColor = '#F00';
-}}
+
 
         )
 }
