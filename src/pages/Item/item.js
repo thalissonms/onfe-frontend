@@ -27,6 +27,10 @@ export default function Item ({id, nome, quantidade, unidade, preço, openBox, m
                             <span style={{color:fontColor}}>R$ {preço}</span>
                         </li>   
                 </ul>
-            </div>
+           </div>
+{if (unidade <= 0){
+document.querySelector('.itemInfo').style.backgorundColor = '#F00';
+}}
+
         )
 }
