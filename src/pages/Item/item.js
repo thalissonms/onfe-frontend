@@ -29,9 +29,6 @@ export default function Item ({id, nome, quantidade, unidade, preço, openBox, m
                         </li>   
                 </ul>
            </div>
-           { if (unidade <= 0){
-               document.getElementsByClassName('itemInfo').style.backgroundColor = '#F00';
-            } }
             </>
 
 
