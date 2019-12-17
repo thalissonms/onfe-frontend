@@ -12,7 +12,7 @@ export default function Item ({id, nome, quantidade, unidade, preço, openBox, m
                 }
             }
             if (unidade <= 0){
-               document.querySelector('.itemInfo').style.backgorundColor = '#F00';
+               document.getElementsByClassName('itemInfo').style.background = '#F00';
             }
         return(
             <div onClick={() => delEdit()} className="itemInfo">
