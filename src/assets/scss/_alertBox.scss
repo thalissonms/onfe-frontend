@@ -1,0 +1,34 @@
+/* ALERT MIXINS */ 
+@mixin alertDefault {
+  background-color:$secundaryBgColor;
+  border-radius:10px;
+  display:flex;
+  flex-direction:column;
+  text-align: center;
+}
+
+/* ALERT CREATE */
+.alertBoxDefault {
+  @include alertDefault();
+  width:45rem;
+  height:230px;
+  box-shadow:1px 1px 10px $defaultShadowColor;
+  padding:10px 20px 20px 10px;
+}
+.alertBoxTitle {
+  min-height:30%;
+  color:$secundaryTxtColor;
+}
+.alertBoxText {
+  min-height:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alertBoxButtons {
+  width:100%;
+  min-height:20%;
+  margin-top:25px;
+  display:flex;
+  justify-content: center;
+}

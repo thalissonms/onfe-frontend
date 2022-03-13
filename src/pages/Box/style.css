@@ -1,0 +1,60 @@
+#all {
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+    position:absolute;
+    z-index:1;
+    top:0;
+}
+#box {
+    width:35%;
+    height:95%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background:#333;
+    border-radius: 10px;
+    box-shadow:1px 1px 10px #000;
+}
+#close {
+    position: absolute;
+    top:3.4%;
+    right:33%;
+    color:#FFFFFF;
+    font-size:16px;
+    font-weight:bolder;
+    cursor:pointer;
+    text-shadow:1px 1px 5px #000;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#titleBox {
+    margin-top:2%;
+    font-size:24px;
+    color:#CCCCCC;
+}
+/* ----------- EFEITOS ----------- */
+#close:hover {
+    text-shadow:1px 1px 5px #555;
+}
+#close:active {
+    color:#CCC;
+    text-shadow:none;
+    transition-duration:100ms;
+}
+.inputBox::placeholder {
+    color:#999999;
+}
+/* ------------- AJUSTES FONTES ------------- */ 
+@media screen and (max-width: 1400px) {
+    #titleBox {
+        font-size:22px;
+        font-weight:550;
+    }
+}

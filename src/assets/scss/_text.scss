@@ -1,0 +1,12 @@
+.defaultTinySistemTxt {
+  @include defaultText();
+  font-size:18pt;
+}
+.defaultMediumSistemTxt {
+  @include defaultText();
+  font-size:28pt;
+}
+.defaultLargeSistemTxt {
+  @include defaultText();
+  font-size:42pt;
+}

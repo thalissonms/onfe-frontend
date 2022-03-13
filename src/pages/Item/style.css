@@ -1,0 +1,48 @@
+.itemInfo {
+    width:100%;
+    min-height:62px;
+    
+    margin-top: 1px;
+    display: block;
+    z-index:-1;
+    cursor:pointer;
+}
+.itemInfo ul {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:row;
+}
+.itemInfo ul li {
+    min-height:62px;
+    display: flex;
+    align-items :center;
+    justify-content:center;
+    border-left:0.5px solid #707070;
+    border-bottom:0.5px solid #707070;
+}
+.itemInfo ul li span {
+    font-size:32px;
+    font-weight:bold;
+    color:#EEEEEE;
+    word-wrap:break-all;
+}
+#loading {
+    width:100%;
+    text-align:center;
+    position: absolute;
+    top:50%;
+    color:#FFF;
+    text-shadow: inset -10px -10px 5px #000;
+}
+#loading img {
+    width:70px;
+    height:70px;
+}
+/*  ------------------------------ EFEITOS ------------------------------ */
+.itemInfo:hover {
+    background-color:#111;
+}
+.itemInfo:active {
+    background-color:#1F1F1F;
+}

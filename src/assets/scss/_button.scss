@@ -1,0 +1,56 @@
+/* BUTTONS MIXINS */
+@mixin buttonEffectDefault {
+  border:none;
+  cursor: pointer;
+  &:focus {
+    box-shadow:1px 2px 10px #000;
+    transition-duration: 300ms;
+  }
+  &:hover {
+    filter: brightness(95%);
+    box-shadow:2px 2px 6px #000;
+  }
+  &:active {
+    box-shadow:0.5px 0.5px 3px #000;
+  }
+}
+@mixin boxBtn ($txtColor) {
+  width:13rem;
+  height:2.3rem;
+  box-shadow:1px 1px 5px #000;
+  border-radius:5rem;
+  color:$txtColor;
+  font-family:$sistemFont;
+  font-size:18pt;
+  margin:10px;
+}
+
+/* BUTTONS CREATE */
+.defaultEffectBtn {
+  @include buttonEffectDefault();
+}
+.alertBtnPrimaryLg {
+  @include boxBtn($defaultBtnTxtColor);
+  background-color:$dangerColor;
+}
+.warningBtnPrimaryLg {
+  @include boxBtn($defaultBtnTxtColor);
+  background-color:$warningColor;
+}
+.saveBtnPrimaryLg {
+  @include boxBtn($defaultBtnTxtColor);
+  background-color:$successColor;
+}
+.defaultBtnPrimaryLg {
+  @include boxBtn($defaultBtnTxtColor);
+  background-color:$primaryBtnColor;
+}
+.defaultBtnSecondaryLg {
+  @include boxBtn($defaultBtnTxtColor);
+  background-color:$secondaryBtnColor;
+}
+.blackBtnPrimaryLg {
+  @include boxBtn($defaultTxtColor);
+  background-color:$defaultBntColor;
+}
+
